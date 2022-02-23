@@ -1,40 +1,41 @@
 {
-    "name": "@gcto/quasar-shared",
-    "version": "0.0.1",
-    "description": "Shared stuff for Quasar + Firebase RAD",
-    "main": "lib/index.js",
-    "types": "lib/index.d.js",
-    "scripts": {
-      "test": "echo \"No test specified\"",
-      "build": "tsc",
-      "format": "echo \"No formatter specified\"",
-      "lint": "echo \"No linter specified\"",
-      "prepare": "npm run build",
-      "prepublishOnly": "npm test && npm run lint",
-      "preversion": "npm run lint",
-      "version": "npm run format && git add -A src",
-      "postversion": "git push && git push --tags"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/gcto/quasar-shared.git"
-    },
-    "keywords": [],
-    "author": "Alex <alex@gcto.ca>",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/gcto/quasar-shared/issues"
-    },
-    "homepage": "https://github.com/gcto/quasar-shared#readme",
-    "dependencies": {
-      "firebase": "^9",
-      "vue": "^3"
-    },
-    "devDependencies": {
-      "typescript": "^4"
-    },
-    "publishConfig": {
-      "@gcto:registry": "https://npm.pkg.github.com"
-    }
+  "name": "@gcto/quasar-shared",
+  "version": "0.0.1",
+  "description": "Shared stuff for Quasar + Firebase RAD",
+  "main": "lib/index.js",
+  "types": "lib/index.d.js",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "build": "tsc",
+    "format": "echo \"No formatter specified\"",
+    "lint": "echo \"No linter specified\"",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcto/quasar-shared.git"
+  },
+  "keywords": [],
+  "author": "Alex <alex@gcto.ca>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gcto/quasar-shared/issues"
+  },
+  "homepage": "https://github.com/gcto/quasar-shared#readme",
+  "dependencies": {
+    "firebase": "^9",
+    "quasar": "^2.5.5",
+    "vue": "^3"
+  },
+  "devDependencies": {
+    "@types/vue": "^2.0.0",
+    "typescript": "^4"
+  },
+  "publishConfig": {
+    "@gcto:registry": "https://npm.pkg.github.com"
   }
-  
+}

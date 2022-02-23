@@ -1,4 +1,4 @@
-import { shallowRef, watchEffect, Ref } from 'vue';
+import { shallowRef, watchEffect, Ref } from "vue";
 
 /**
  * Call inside component `setup()`:
@@ -14,8 +14,7 @@ export function usePromise<T>(fn: () => T | Promise<T>, refreshMs?: number) {
   const result = shallowRef<T | null>();
   let done = false;
   watchEffect((onInvalidate) => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let handle: any;
+    let handle: NodeJS.Timeout;
     const tick = async () => {
       try {
         const value = await fn();
@@ -45,7 +44,7 @@ export function usePromise<T>(fn: () => T | Promise<T>, refreshMs?: number) {
 export function refToPromise<T = { isLoading?: true }>(
   ref: Ref<T>,
   filterFn = (value: T | { isLoading?: true }) =>
-    value !== undefined && !('isLoading' in value && value.isLoading)
+    value !== undefined && !("isLoading" in value && value.isLoading)
 ) {
   return new Promise((resolve) => {
     watchEffect(() => {
