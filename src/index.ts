@@ -3,7 +3,7 @@
 // export * from './firebase-auth';
 // export * from './firebase-database';
 // export * from './firestore';
-export * from './promise';
+export * from "./hooks/promise";
 
 // import firebase from 'firebase/app';
 
