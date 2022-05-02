@@ -44,7 +44,7 @@ TODO: Getting started and 1-pager of usage sample code
 
 ### Canonical project
 
-- https://github.com/gcto/ArtBlock
+- TODO: Renegade Tickets
 - TODO: Sea Horse
 - TODO: Ball Street
 - TODO: Rivvi
